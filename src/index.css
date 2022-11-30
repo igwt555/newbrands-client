@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Gelion Light';
+  src: local('Gelion Light'), url(./assets/fonts/Gelion-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gelion Medium';
+  src: local('Gelion Medium'), url(./assets/fonts/Gelion-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gelion';
+  src: local('Gelion'), url(./assets/fonts/Gelion-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gelion SemiBold';
+  src: local('Gelion SemiBold'), url(./assets/fonts/Gelion-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gelion Bold';
+  src: local('Gelion Bold'), url(./assets/fonts/Gelion-Bold.ttf) format('truetype');
+}
+
+* {
+  font-family: 'Gelion';
+}
+
+img {
+  pointer-events: none;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+html {
+  font-size: 16px;
+  background: #FEFDFD;
+}
+
+.bold {
+  font-family: "Gelion SemiBold";
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

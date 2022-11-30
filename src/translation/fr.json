@@ -1,0 +1,138 @@
+{
+    "header": {
+        "home": "Accueil",
+        "about": "À propos",
+        "contact": "Contact",
+        "connect": "Connexion",
+        "createProject": "Créer un projet"
+    },
+    "home":{
+        "firstSection": {
+            "title": "L'innovation au service de la filière textile",
+            "subtitle": "Relever le défi de la soutenabilité d'une filière fortement polluante en permettant à chaque acteur d'y faire grandir et pérenniser son business grâce aux solutions innovantes.",
+            "mailInput": "Entrez votre adresse e-mail",
+            "btnNewsletter": "Être prévenu",
+            "noSpamContainer": "Besoins d’informations complémentaires ?",
+            "noSpam": "Soyez recontacté par un commercial quand vous le souhaitez en cliquant ici"
+        },
+        "secondSection": {
+            "title": "Nos services, votre marque",
+            "subtitle": "Nous vous accompagnons dès le premier jour de votre projet, nous intervenons dès vos besoins de stylisme afin de donner vie à votre projet de marque, jusqu’aux prototypages de vos modèles et la production de votre collection.",
+            "stylismTitle": "Stylisme",
+            "stylism1": "Faites confiance au savoir-faire de nos stylistes issus des plus grandes maisons de couture pour",
+            "stylism2": " donner vie à vos collections.",
+            "stylism3": "",
+            "ethicalTitle": "Matières_Éthiques",
+            "ethical1": "Pour des collections durables, nos matières à faible impact sont sourcées à travers l'Union Européenne parmi un portefeuille de partenaires labelisés",
+            "ethical2": " #GOTS #OEKO.",
+            "developmentTitle": "Développement_Produit",
+            "development1": "Mise en fabrication de vos prototypes dans l'un de nos ",
+            "development2": "53 bureaux d'études",
+            "development3": " partout en France, au plus proche de votre région.",
+            "productionTitle": "Mise_En_Production",
+            "production1": "Mise en production dans l'une de nos ",
+            "production2": "4 000 usines",
+            "production3": ", aux quatre coins de l'Hexagone, au plus près du lieu de livraison final.",
+            "optimisationTitle": "Optimisation_Transports",
+            "optimisation1": "Réduction la plus optimale des transports routiers en faveur du fret ferroviaire, grâce à la coalition Européenne ",
+            "optimisation2": "Rail Freight Forward",
+            "soonAvailable": "Bientôt disponible",
+            "recyclingTitle": "Recyclage_Et_Upcyclage",
+            "recycling1": "Mise en valeur des chutes et textiles dormants, usagés ou non, dans la création de nouvelles productions ",
+            "recycling2": "à moindre coût."
+        },
+        "thirdSection": {
+            "title": "Nous simplifions vos démarches et réduisons vos coûts de production",
+            "subtitle": "Concentrez-vous sur l'essentiel",
+            "text": "Nous vous accompagnons étape par étape dans la définition de votre projet. Précisez l’ensemble des informations permettant de trouver le ou les meilleurs partenaires. De son type (stylisme, modélisme, confection, sourcing), jusqu’au nombre de produits que vous souhaitez confectionner !",
+            "demo": "Demandez une demo ",
+            "projectCreationTitle": "Un suivi complet et flexible",
+            "projectCreation": "Suivez en temps réel l’avancement de votre collection grâce aux mises à jours étape par étape visible sur votre espace utilisateur."
+        },
+        "fourthSection": {
+            "title": "Lancez votre première production gratuite*",
+            "subtitle": "Bénéficiez d’une première production hors frais de commission en sélectionnant notre offre avec engagement.",
+            "startingFrom": "À partir de",
+            "99perMonth": "99.99€/mois",
+            "99description": "+ Commission par palier comprise entre 0.80% et 7.00%, selon le volume de production",
+            "0perMonth": "0€/mois",
+            "0description": "+ Commission par palier compris entre 7% et 12,50%, selon le volume de production",
+            "sample": "Échantillons des matières",
+            "commands": "Gestion des commandes",
+            "monitoring": "Suivi en temps réel",
+            "strategy": "Stratégie de production",
+            "projectManage": "Gestion des projets",
+            "dedicatedProduction": "Resp. production dédié",
+            "select": "Sélectionner",
+            "specialPricing": "Tarif spécial",
+            "incubated": "Incubées",
+            "incubatedText": "+ 40 incubateurs partenaires à travers la France Métropolitaine*",
+            "verifyEligibility": "Vérifier éligibilité"
+        },
+        "fifthSection": {
+            "title": "Foire aux questions",
+            "subtitle": "Nous avons répondu aux questions les plus fréquentes, cependant, en cas de questions supplémentaires ; vous pouvez nous écrire à ",
+            "whatsNewbrands": "Qu'est-ce que Newbrands ?",
+            "whatsNewbrandsDescription": "NewBrands met les marques en relation avec les manufactures françaises et européennes ainsi qu’avec des fournisseurs de matières premières éthiques et biosourcées européennes afin de rendre l’industrie textile plus verte. \n \n Notre objectif premier est de connecter l’industrie de façon innovante et pertinente grâce à l’utilisation d’algorithmes et d’intelligence artificielle dans la sélection des partenaires pouvant répondre de façon concrète aux besoins des marques.",
+            "timeToWork": "Combien de temps faut-il pour que je puisse commencer à travailler avec un fabricant ?",
+            "timeToWorkDescription": "La création d’un compte prend en moyenne 5 minutes sur NewBrands, vous pouvez lancer votre appel d’offres aussitôt inscrit. Le temps de réponse varie généralement entre 48 heures et 5 jours ouvrés pour recevoir une proposition commerciale consolidée. \n \n Après réception de votre proposition commerciale, libre à vous de l’accepter, la décliner ou bien la renégocier. En cas d’acceptation, des éléments de vérification d’identité* seront obligatoires pour la signature tripartite entre les usines, votre entreprise et NewBrands. \n \n* La vérification des éléments peut prendre 1 heure maximum.",
+            "timeToCraft": "Combien de temps faut-il pour passer du développement à la confection ?",
+            "timeToCraftDescription": "Plusieurs éléments sont à prendre en compte, cela dépendra de la complexité des pièces à développer ainsi que le sourcing des matières premières final. \n \n Nous vous conseillons de directement choisir le Sourcing + Développement + Confection lors de la création de projet. Cela permettra de faire une présélection des partenaires intervenant sur vos produits et ainsi accélérer la prise en charge de vos produits aussitôt le développement terminé par nos partenaires.",
+            "whyNewbrands": "Pourquoi devrais-je travailler avec NewBrands ?",
+            "whyNewbrandsDescription": "Nous sommes à vos côtés de la première à la dernière étape de vos projets de sourcing, développement, confection ou encore de distribution. \n \n Nous avons pour vocation d’être votre partenaire dans votre activité et surtout d’être un outil vous permettant de faciliter la gestion de vos projets de développement sourcing et confection au sein de votre activité, votre marque. \n \n NewBrands milite pour une industrie plus verte et respectueuse de l’environnement en sollicitant des personnes qualifiées qui travaillent vos produits, pour une clarté de la chaîne de production, éthique, et biosourcée. \n \n Nous affirmons la transparence de votre marque et vos clients finaux."
+        },
+        "sixthSection": {
+            "title": "Vous êtes un fabricant ?",
+            "subtitle": "Faites comme +8 000 usines à travers la France, rejoignez NewBrands et accompagnez des milliers de marques dans leurs projets de production française",
+            "partner": "Devenons partenaires"
+        },
+        "seventhSection": {
+            "withTheHelp": "Avec le soutien de"
+        }
+    },
+    "contact": {
+        "title": "Comment pouvons-nous vous aider ?",
+        "subtitle": "Nous vous répondons en moyenne dans les 24 heures, jours ouvrés uniquement, du lundi au vendredi de 9h30 à 18h.",
+        "nameInputLabel": "Nom complet *",
+        "mailInputLabel": "Adresse e-mail *",
+        "messageInputLabel": "Votre message *",
+        "messageInput": "Écrivez-nous",
+        "sendBtn": "Envoyer",
+        "policy": "En cliquant sur envoyer, vous acceptez nos",
+        "policyLink": "Règles de Confidentialité.",
+        "file": "Pièce jointe",
+        "mail": "faq-fr@newbrands.fr",
+        "sidePanel": {
+            "headOffice": "#SiègeSocial",
+            "contactUs": "#NosCoordonnées"
+        }
+    },
+    "legals": {
+        "title": "Mentions légales" 
+    },
+    "footer": {
+        "copyright": "© Copyright 2017-2021, NewBrands, SAS et ses partenaires / Siège Social: NEWBRANDS, 10 Place Vendôme, 75001 Paris. / № SIRET: 829 419 100 000 21 / № APE: 6201 Z / R.C.S: PARIS / № TVA: FR 23 829419100",
+        "legals": "Mentions légales"
+    },
+    "createProject": {
+        "menu": {
+            "product": "Noms et nombre de produits",
+            "content": "Produits",
+            "file": "Photos/Documents",
+            "delai": "Délais attendus",
+            "livraison": "Lieu de livraison",
+            "budget": "Budget (facultatif)",
+            "info": "Description"
+        },
+        "submenu": {
+            "category": "Catégorie",
+            "matter": "Matière",
+            "grammage": "Grammage",
+            "gamme": "Gamme"
+        }
+    },
+    "btn" : {
+        "createProject": "Créer un projet",
+        "demo": "Demandez une demo"
+    }
+}

@@ -1,0 +1,124 @@
+.footerContainer {
+
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+
+    .logoList {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        flex-wrap: wrap;
+        padding: 0;
+        gap: 40px;
+
+        li > * {
+            margin: 0;
+        }
+    
+        .text {
+            font-family: "Gelion SemiBold";
+            font-size: 25px;
+            display: flex;
+        }
+    
+        img {
+            height: 30px;
+            width: auto;
+        }   
+    }
+
+    .footerContent {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 20px;
+
+        ul {
+            padding: 0;
+            list-style: none;
+
+            li:not(:last-child) {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            li:first-child {
+                font-family: "Gelion SemiBold";
+                font-size: 14px;
+                color: gray;
+            }
+        }
+
+        .emailInfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .emailInfo, .phoneInfo {
+            li {
+                color: #00798c;
+                font-family: "Gelion SemiBold";
+                font-size: 18px;
+            }
+        }
+
+        .copyright {
+            font-family: "Gelion SemiBold";
+            align-self: center;
+            color: #777;
+        }
+    }
+
+    .footerConditionsAndMentions {
+        margin-top: 30px;
+        border-top: 1px solid lightgray;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style: none;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 0;
+
+            li {
+                font-family: "Gelion SemiBold";
+                color: gray;
+
+                a {
+                    font-family: "Gelion SemiBold";
+                    color: gray;
+                }
+            }
+
+            .socialNewtorksLinks {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-width: 24px;
+                    max-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .logoList {
+        flex-direction: column;
+        h4 {
+            margin-bottom: 0;
+        }
+        li {
+            margin: 1rem;
+        }
+    }
+}

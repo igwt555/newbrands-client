@@ -1,0 +1,685 @@
+.farePageContainer {
+
+    .uppercase { text-transform: uppercase }
+
+    .farePageContent {
+
+        .pricingPlanIntroSection {
+            padding: 50px 20vw;
+            margin-top: 60px;
+            background: url('../../assets/img/pricing-plan-background-banner.svg');
+
+            > * {
+                text-align: center;
+                color: white;
+            }
+
+            .pricingPlanCatchPhrase {
+                font-family: "Gelion Medium";
+                font-size: 55px;
+            }
+
+            .pricingPlanTitle, .pricingPlanDetails {
+                font-family: "Gelion Medium";
+            }
+
+            button {
+                font-family: "Gelion Medium";
+                margin: auto;
+                background-color: rgba(255, 255, 255, 0.116);
+                border-radius: 24px;
+            }
+        }
+
+        .pricingSection {
+            margin-top: 100px;
+            text-align: center;
+
+            > h1 {
+                font-family: "Gelion Bold";
+                font-size: 48px;
+                line-height: 56px;
+                text-align: center;
+                letter-spacing: -0.04em;
+                color: #0A071B;
+                width: 700px;
+                margin: auto;
+            }
+
+            .modeSwitch {
+                display: flex;
+                background: rgba(216, 216, 216, 0.15);
+                border-radius: 32px;
+                width: max-content;
+                margin: auto;
+                margin-top: 40px;
+                padding: 5px;
+
+                p {
+                    font-family: "Gelion Medium";
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-align: center;
+                    letter-spacing: -0.02em;
+                    padding: 10px 50px;
+                    margin: 0;
+                    transition: 0.4s;
+
+                    &.active {
+                        background: #FFFFFF;
+                        box-shadow: 0px 14px 24px rgba(140, 135, 166, 0.08), 0px 8px 12px rgba(140, 135, 166, 0.08), 0px 3px 3px rgba(140, 135, 166, 0.12);
+                        border-radius: 28px;
+                        color: #00798C;
+                    }
+
+                    &:not(.active) {
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #00798C;
+                        }
+                    }
+                }
+            }
+
+            .pricingList {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 35px;
+                margin-top: 50px;
+
+                .pricingInfo {
+                    .pricingBox {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        border: 1px solid #F8F7FC;
+                        padding: 40px;
+                        transition: 0.4s;
+
+                        > * {
+                            width: max-content;
+                            margin: 0;
+                        }
+
+                        .pricingType {
+                            font-family: "Gelion Medium";
+                            font-size: 32px;
+                            line-height: 40px;
+                            letter-spacing: -0.04em;
+                            color: #0A071B;
+                        }
+
+                        .priceText {
+                            font-family: "Gelion Bold";
+                            font-size: 40px;
+                            line-height: 48px;
+                            letter-spacing: -0.04em;
+                            color: #0A071B;
+
+                            span {
+                                font-family: "Gelion Bold";
+                                color: rgb(141, 141, 141);
+                            }
+                        }
+
+                        .nbOfUsers {
+                            font-family: "Gelion Medium";
+                            font-size: 16px;
+                            line-height: 32px;
+                            letter-spacing: -0.02em;
+                            color: #5B5675;
+                        }
+
+                        a {
+                            width: 100%;
+                        }
+
+                        .btn {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 25px 20px;
+                            font-family: "Gelion Medium";
+                        }
+
+                        &:hover {
+                            background: white;
+                            border-color: #00798c;
+                        }
+                    }
+
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        width: auto;
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            .optionForBigCompaniesBox {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 1000px;
+                margin: auto;
+                background: rgba(0, 121, 140, 0.1);
+                border-radius: 10px;
+                padding: 25px;
+                margin-top: 50px;
+                gap: 30px;
+                align-items: center;
+
+                > * {
+                    margin: auto;
+                }
+
+                p:first-child {
+                    font-family: "Gelion SemiBold";
+                    font-size: 24px;
+                    line-height: 100%;
+                    display: flex;
+                    align-items: center;
+                    color: #00798C;
+                }
+
+                .detailsText {
+                    font-family: "Gelion Medium";
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #00798C;
+                    mix-blend-mode: normal;
+                    opacity: 0.7;
+                }
+
+                .btn {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 17px 60px;
+                    border-radius: 60px;
+                    font-family: "Gelion Medium";
+                    height: auto;  
+                }
+            }
+        }
+
+        .suppliersAndManufacturesSection {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 60px;
+            padding: 30px;
+
+            p {
+                font-family: "Gelion Medium";
+                font-size: 30px;
+                text-align: center;
+
+                span {
+                    font-family: "Gelion Medium";
+                    color: #00798c;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                list-style: none;
+                gap: 30px;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    background-color: white;
+                    border-radius: 12px;
+                    box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.123);
+                }
+            }
+        }
+
+        .whatWeDoSection {
+            margin-top: 100px;
+
+            .descriptionPart {
+                padding-right: 140px;
+                padding-left: 140px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 20px;
+
+                div {
+                    width: 500px;
+
+                    p:first-child {
+                        font-family: "Gelion Medium";
+                        color: #00798c;
+                        margin: 0;
+                    }
+
+                    h1 {
+                        font-family: "Gelion SemiBold";
+                        font-size: 40px;
+                        margin: 0;
+                        font-size: 40px;
+                        line-height: 48px;
+                        letter-spacing: -0.04em;
+                        color: #0A071B;
+                    }
+
+                    p:last-child {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 32px;
+                        letter-spacing: -0.03em;
+                        color: #5B5675;
+                        margin-top: 8px;
+                    }
+                }
+
+                button {
+                    font-family: "Gelion Medium";
+                    padding: 20px 40px;
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .detailsPart {
+                width: 80vw;
+                margin: auto;
+                background: #00798C1A;
+                margin-top: 50px;
+
+                > div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    margin: auto;
+                    padding: 30px;
+                    gap: 60px;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: 280px;
+                        gap: 30px;
+                        padding: 30px;
+                        background: white;
+                        box-shadow: 1px 1px 12px rgba(85, 85, 85, 0.123);
+                        height: 320px;
+                        margin-top: -60px;
+                        margin-bottom: 20px;
+
+                        * {
+                            margin: 0;
+                            text-align: center;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            line-height: 160%;
+                            text-align: center;
+                            letter-spacing: -0.02em;
+                            color: #5B5675;
+                        }
+
+                        img {
+                            width: 60px;
+                            font-family: "Gelion Medium";
+                            font-size: 24px;
+                            line-height: 32px;
+                            text-align: center;
+                            letter-spacing: -0.04em;
+                            color: #0A071B;
+                        }
+
+                        a {
+                            margin-top: auto;
+                            font-family: "Gelion Medium";
+                            font-size: 14px;
+                            line-height: 24px;
+                            text-align: center;
+                            letter-spacing: -0.02em;
+                            color: #00798C;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .usersOpinionsSection {
+            width: 800px;
+            margin: auto;
+            margin-top: 100px;
+
+            > p:first-child {
+                font-family: "Gelion Medium";
+                color: #00798c;
+                margin: 0;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.04em;
+            }
+
+            > h1 {
+                font-family: "Gelion SemiBold";
+                font-size: 40px;
+                line-height: 48px;
+                text-align: center;
+                letter-spacing: -0.04em;
+                color: #0A071B;
+                margin: 0;
+            }
+
+            .usersOpinionsDetails {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 60px;
+
+                > p {
+                    font-size: 132px;
+                    line-height: 140px;
+                    letter-spacing: -0.03em;
+                    color: rgba(0, 121, 140, 0.1);
+                    padding: 30px;
+                }
+
+                > p:first-child {
+                    margin-top: -5px;
+                }
+
+                > p:last-child {
+                    margin-top: 80px;
+                }
+
+                .detailsBlock {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .scoreDiv {
+                        display: flex;
+                        gap: 15px;
+
+                        img {
+                            width: 25px;
+                        }
+                    }
+
+                    .commentDiv {
+                        p:first-child {
+                            font-family: "Gelion Medium";
+                            font-size: 32px;
+                            line-height: 40px;
+                            letter-spacing: -0.03em;
+                            color: #0A071B;
+                            margin-top: 0;
+                        }
+
+                        p:last-child {
+                            font-family: "Gelion Bold";
+                            font-size: 14px;
+                            line-height: 24px;
+                            letter-spacing: 0.04em;
+
+                            span:first-child {
+                                color: darkgray;
+                                font-family: "Gelion Bold";
+                            }
+
+                            span:last-child {
+                                color: #00798C;
+                                font-family: "Gelion Bold";
+                            }
+                        }
+                    }
+
+                    .commentAuthors {
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        margin: auto;
+                        gap: 40px;
+
+                        .circledAuthor {
+                            background: #fff;
+                            padding: 5px;
+                            border: 3px solid;
+                            border-radius: 50%;
+                            border-color: rgb(209, 209, 209) rgb(209, 209, 209) #00798c #00798c;
+                            transform: rotate(60deg);
+
+                            img {
+                                transform: rotate(-60deg);
+                                width: 90px;
+                            }
+                        }
+
+                        div {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                width: 90px;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .farePageContainer {
+        .farePageContent {
+            .pricingSection {
+                .optionForBigCompaniesBox {
+                    width: 75%;
+                }
+
+                .pricingList {
+                    padding: 0 5vw;
+
+                    .pricingInfo .pricingBox {
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .farePageContent {
+        .pricingPlanIntroSection {
+            padding: 50px 10vw;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .farePageContent {
+
+        .pricingPlanIntroSection {
+
+            padding: 50px 30px !important;
+
+            .pricingPlanCatchPhrase {
+                font-size: 32px !important;
+            }
+        }
+
+        .pricingSection {
+            h1 {
+                font-size: 30px !important;
+                width: 80% !important;
+            }
+        }
+
+        .whatWeDoSection {
+            .descriptionPart {
+                flex-direction: column;
+                padding: 20px !important;
+                margin: auto;
+                width: 90vw;
+
+                .descriptionBlock {
+
+                    h1 {
+                        font-size: 30px !important;
+                    }
+                }
+            }
+        }
+
+        .usersOpinionsSection {
+            width: 90vw !important;
+
+            h1 {
+                font-size: 30px !important;
+            }
+
+            .usersOpinionsDetails {
+                > p {
+                    font-size: 80px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .farePageContainer {
+        .farePageContent {
+
+            .pricingSection .pricingList {
+                gap: 50px;
+
+                .pricingInfo {
+                    .pricingBox {
+                        p { text-align: center; width: 100% }
+                    }
+    
+                    form {
+                        align-items: center;
+                    }
+                }
+            }
+
+            .whatWeDoSection {
+                .descriptionPart {
+                    flex-direction: column;
+                    padding: 20px !important;
+                    margin: auto;
+                    width: 90vw;
+    
+                    .descriptionBlock {
+                        width: 90vw !important;
+                        text-align: center;
+    
+                        h1 {
+                            font-size: 30px !important;
+                        }
+                    }
+                }
+    
+                .detailsPart {
+                    > div {
+                        div {
+                            height: unset !important;
+                        }
+                    }
+                }
+            }
+    
+            .usersOpinionsSection {
+                .usersOpinionsDetails {
+    
+                    > p:first-child {
+                        padding-left: 0;
+                        margin-top: -20px !important;
+                    }
+    
+                    > p:last-child {
+                        padding-left: 0;
+                        margin-top: 100px !important;
+                    }
+    
+                    .detailsBlock {
+                        .commentDiv {
+                            p:first-child {
+                                font-size: 25px !important;
+                            }
+    
+                            p:last-child {
+                                font-size: 13px !important;
+                            }
+                        }
+    
+                        .commentAuthors {
+                            img {
+                                width: 60px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .farePageContent {
+
+        .pricingPlanIntroSection {
+            .pricingPlanDetails {
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        .whatWeDoSection {
+            .detailsPart {
+                width: 90vw !important;
+                > div {
+                    padding: 15px;
+
+                    div {
+                        h2 {
+                            font-size: 20px !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .usersOpinionsSection {
+            .usersOpinionsDetails {
+                > p {
+                    display: none;
+                }
+            }
+        }
+    }
+}

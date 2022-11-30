@@ -1,0 +1,75 @@
+.material-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 103px 3fr 1fr;
+    padding: 20px 0;
+
+    border-bottom: 1px solid #DDDDDD;
+
+    &>.Mimage {
+        width: 103px;
+        height: 116px;
+
+        &>img {
+            width: 103px;
+            height: 116px;
+        }
+    }
+
+    &>.M-Content {
+        margin-left: 40px;
+
+
+        &>.Top-row {
+            margin-top: 23px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 130%;
+
+            color: #000000;
+        }
+
+        &>.Bottom-row {
+            margin-top: 15px;
+            display: grid;
+            grid-template-columns: min-content min-content min-content;
+            gap: 20px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            /* or 171% */
+
+            display: flex;
+            align-items: flex-end;
+            letter-spacing: -0.006em;
+
+            /* Mid Gray / Mid Gray 2 */
+
+            color: #6E7C87;
+
+            &>div {
+                white-space: nowrap;
+            }
+        }
+    }
+
+    &>.M-Dropdown {
+        display: grid;
+        align-items: center;
+        width: 230px;
+        height: 48px;
+        padding-left: 18px;
+        background: #FFFFFF;
+        /* gris */
+
+        border: 1px solid #DDDDDD;
+        /* Card */
+
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+    }
+}

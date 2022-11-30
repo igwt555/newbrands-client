@@ -1,0 +1,66 @@
+@import "font/font.scss";
+@import "animate.scss";
+
+* {
+    font-family: 'Gelion';
+}
+
+html {
+    font-size: 16px;
+    background: #FEFDFD;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #FEFDFD;
+
+    div {
+        box-sizing: border-box;
+    }
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+html body iframe#LeadboosterContainer {
+    right: 0px !important;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+img {
+    pointer-events: none;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.bold {
+    font-family: "Gelion SemiBold";
+    color: #333;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #333333;
+}
+
+#root {
+    display: grid;
+}

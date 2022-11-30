@@ -1,0 +1,213 @@
+.contentContainer {
+    min-height: 90vh;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+
+    .leftColumnContact {
+        max-width: 60%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .contactFormIntroText {
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size: 47px;
+            font-family: "Gelion Bold";
+            margin: 0;
+            line-height: 47px;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-size: 0.9rem;
+            }
+
+            input,
+            textarea {
+                margin-bottom: 40px;
+                outline: none;
+                padding: 10px 20px;
+                border: none;
+                border-bottom: 1px solid #e9e9e9;
+                background-color: transparent;
+                font-size: 18px;
+            } 
+        }
+        
+        .sendContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            & a {
+                color: #00798C;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+            & label {
+                width: auto;
+                padding: 10px;
+                margin-left: 2rem;
+            }
+            & label, label a{
+                font-size: 0.7rem;
+            }
+            & .attachment {
+                display: flex;
+                font-size: 0.8rem;
+                align-items: center;
+                & img {
+                    margin: 0 10px;
+                }
+            }
+        }
+        
+        .validationMsg {
+            font-family: "Gelion Light";
+            margin-bottom: 20px;
+
+            &.valid { color: green }
+            &.error { color: red }
+        }
+
+        .btn {
+            font-family: "Gelion";
+            font-weight: 500;
+            transition: 0.2s;
+            outline: none;
+            display: flex;
+            border-radius: 60px !important;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            padding: 24px 45px;
+            &:hover {
+                transition: 0.2s;
+                cursor: pointer;
+                opacity: 0.5;
+            }
+        }
+        
+        .blueBtn {
+            height: 48px;
+            color: #fff;
+            border: none;
+            box-shadow: none;
+            background: #00798c;
+        }
+        
+        .rounded {
+            border-radius: 10px;
+        }
+
+    }
+    
+    .sideInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h4 {
+            margin: 0;
+        }
+
+        .socialNetworkLinkBox {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: center;
+            padding: 0 24px;
+
+            background: #F8F7FC;
+            border-radius: 24px;
+        }
+
+        .contactDetails {
+            padding: 20px;
+            color: #00798C;
+            background-color: #e5f2f3;
+
+            h2 {
+                font-size: 38px;
+                margin: 0;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            :last-child {
+                text-decoration: underline;
+            }
+        }
+
+        h4 {
+            font-family: "Gelion Medium";
+        }
+
+        .h2 {
+            font-size: 2rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .contentContainer {
+        flex-direction: column;
+
+        .leftColumnContact {
+            margin-top: 80px;
+            max-width: unset;
+
+            h1 {
+                font-size: 33px;
+                line-height: 33px;
+            }
+        }
+
+        .sideInfo {
+            margin-bottom: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .rowAlign {
+        flex-direction: column;
+    }
+    .contentContainer {
+        min-height: 80rem;
+        margin-top: 2rem;
+    }
+    .leftColumnContact {
+        width: 85vw;
+        text-align: center;
+    }
+    .sendContainer, .form {
+        text-align: left;
+    }
+    .form {
+        margin-top: 3rem;
+    }
+    .sendContainer {
+        overflow: hidden;
+        flex-direction: column-reverse;
+        height: 10rem;
+    }
+}

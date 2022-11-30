@@ -1,0 +1,15 @@
+.projectNameInputContainer {
+    &.error {
+        fieldset {
+            border-color: red !important;
+            outline: none;
+        }
+    }
+
+    .errorMessage {
+        margin-top: 10px;
+        text-align: start;
+        font-size: 16px;
+        color: red;
+    }
+}

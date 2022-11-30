@@ -1,0 +1,89 @@
+.containerSideMenu {
+    position: fixed;
+    padding: 8rem 2rem 2rem 5vw;
+    width: 25vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 5;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .sideMenu {
+
+        h2 {
+            font-size: 1.6rem;
+            margin-top: 0;
+        }
+
+        ul {
+            padding: 0;
+            margin: 50px 0;
+        }
+
+        .active,
+        li:hover {
+            transition: 0.2s;
+            color: #000;
+            border-left: 3px solid #00798c;
+            font-weight: bolder;
+            padding-left: 1.5rem;
+            cursor: pointer;
+        }
+
+        li {
+            transition: 0.2s;
+            border-left: 3px solid transparent;
+            padding: 10px 0;
+            margin: 10px 0;
+            font-size: 0.85rem;
+            color: grey;
+            list-style: none;
+        }
+    }
+
+    .sideFooter {
+        color: #333;
+        font-size: 0.8rem;
+        font-family: "Gelion Light";
+
+        &::before {
+            content: "";
+            display: block;
+            height: 2rem;
+        }
+    }
+
+    .sideBurger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .containerSideMenu {
+        width: 300px;
+        border-right: 1px solid lightgray;
+
+        .sideBurger {
+            position: absolute;
+            top: 75px;
+            left: 10px;
+            display: block;
+        }
+
+        &.closed {
+            width: 60px;
+            padding: 0;
+            padding-top: 75px;
+
+            > * { display: none }
+
+            .sideBurger {
+                margin: 0 auto;
+                position: static;
+                display: block;
+            }
+        }
+    }
+}

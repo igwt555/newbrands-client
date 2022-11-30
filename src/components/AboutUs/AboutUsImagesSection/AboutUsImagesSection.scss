@@ -1,0 +1,45 @@
+.aboutUsImagesSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 160px;
+
+    div {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            height: 20vw;
+            max-height: 500px;
+            min-height: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .aboutUsImagesSection {
+        margin-top: 90px;
+
+        div img {
+            height: 30vw;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aboutUsImagesSection {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .aboutUsImagesSection {
+        gap: 10px;
+
+        div {
+            gap: 10px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.containerError {
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 75%;
+    text-align: center;
+    margin: auto;
+
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    span {
+        opacity: 0.8;
+    }
+}

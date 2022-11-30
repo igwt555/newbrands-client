@@ -1,0 +1,58 @@
+.containerFileList {
+    width: 85%;
+    margin: auto;
+    
+    h2 {
+        margin: 2rem 0;
+    }
+
+    .fileList {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        column-gap: 15px;
+        row-gap: 10px;
+    }
+    
+    .file {
+        transition: 0.3s;
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        margin: .5rem;
+        margin-left: 0;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 0 #dedede;
+        background: #fff;
+        color: #333;
+        &:hover {
+            transition: 0.2s;
+            box-shadow: 0 0 5px #00798c5e;
+        }
+        img {
+            max-height: 50px;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                margin: 0;
+            }
+        }
+        span {
+            font-size: 1rem;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+            font-size: 0.8rem;
+            width: 27%;
+        }
+    }
+    
+
+}
+

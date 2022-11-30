@@ -1,0 +1,105 @@
+.containerSubscription {
+    position: relative;
+    min-height: 80vh;
+    width: 75vw;
+    margin-left: 25vw;
+    box-sizing: border-box;
+    padding: 8rem 2rem 5rem;
+
+    .mainContent {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            line-height: 1.5;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cardContainer {
+            color: #333;
+            margin-top: 3rem;
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #FFF;
+            border-radius: 1px;
+            border: 1px solid #E1E2E6;
+
+            div {
+                .currentSubscription, .price{
+                    line-height: 1;
+                }
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .currentSubscription {
+                font-family: 'Georgia';
+                font-weight: normal;
+                font-size: 1.2rem;
+            }
+            
+            .price {
+                font-family: 'Gelion SemiBold';
+            }
+
+            a {
+                margin-right: auto;
+            }
+
+            .blueBtn {
+                transition: 0.2s;
+                margin-top: 1rem;
+                margin-right: auto;
+                background: #00798C;
+                border: none;
+                padding: 1rem 2rem;
+                color: #FFF;
+                border-radius: 8px;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.5;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+    .containerSubscription {
+        margin: 0;
+        width: 100vw;
+        padding-left: 85px;
+        padding-right: 25px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .containerSubscription {
+        .mainContent {
+            .cardContainer {
+                padding: 5vw;
+
+                div {
+                    flex-wrap: wrap;
+                    
+                    .currentSubscription, .price {
+                        font-size: 15px;
+                    }
+                }
+
+                .subscriptionDescription {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

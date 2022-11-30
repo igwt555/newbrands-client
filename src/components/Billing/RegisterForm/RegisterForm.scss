@@ -1,0 +1,188 @@
+.containerForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 50%;
+    background: #fefdfd;
+    text-align-last: auto;
+    margin-bottom: 15px;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .inputDiv {
+        position: relative;
+        max-width: 45%;
+        margin: 0 0.5rem;
+        flex: 50%;
+        display: flex;
+        -webkit-appearance: none;
+        height: 85px;
+
+        label {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            color: #333333;
+            font-size: 0.8rem;
+            position: absolute;
+            left: 1.25rem;
+            top: 1.25rem;
+            z-index: 2;
+            margin: -10px;
+        }
+
+        input, select {
+            transition: 0.3s;
+            font-family: "Gelion SemiBold";
+            font-size: 1rem;
+            box-sizing: border-box;
+            text-indent: 0.5rem;
+            border: 1px solid #e1e6e2;
+            padding-top: 1.5rem;
+            width: 100%;
+            max-height: 60px;
+            background: #fff;
+            &:focus {
+                transition: 0.3s;
+                border: 1px solid #333333;
+                outline: none;
+            }
+        }
+
+        select {
+            background-repeat: no-repeat;
+            background-position: right;
+            background-image: url("data:image/svg+xml,%3Csvg stroke='currentColor' fill='currentColor' stroke-width='0' viewBox='0 0 20 20' height='1em' width='1em' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'%3E%3C/path%3E%3C/svg%3E");
+            background-position-x: 95%;
+            appearance: none;
+        }
+
+        .autoCompleteDiv {
+            position: absolute;
+            z-index: 5;
+            width: 100%;
+            top: 70%;
+            max-height: 20rem;
+            overflow-y: auto;
+            scrollbar-width: none;
+            box-shadow: 0 5px 10px -5px #333;
+            border: 1px solid #333;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            ul {
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #fff;
+                font-size: 0.95rem;
+                height: auto;
+                width: 100%;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h4, span {
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1.2;
+                }
+
+                .flexDiv {
+                    display: flex;
+                    align-items: center;
+                }
+
+                div {
+                    width: 100%;
+
+                    span:not(:first-child) {
+                        margin: 0 0.5rem;
+                    }
+                }
+
+                li {
+                    transition: 0.2s;
+                    width: 100%;
+                    padding: 1rem;
+                    margin: 0.2rem auto;
+
+                    &:hover {
+                        transition: 0.2s;
+                        cursor: pointer;
+                        color: #fff;
+                        background: #00798c;
+                    }
+                }
+            }
+        }
+    }
+
+    .mailError {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: red;
+
+        a { text-decoration: underline; }
+    }
+
+    .loading {
+        fill: #00798c;
+        align-self: center;
+        margin: 10px;
+        -webkit-animation: spin 2s linear infinite;
+        -moz-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+
+    .containerRes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .buttonsContainer {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+
+            .btn {
+                padding: 20px 30px;
+                font-size: 18px;
+
+                &.back {
+                    background-color: transparent;
+                    font-family: "Gelion";
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .containerForm {
+        flex-direction: column;
+        gap: 20px;
+
+        .inputDiv {
+            max-width: unset;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .containerForm {
+        .containerRes .buttonsContainer {
+            flex-direction: column-reverse;
+        }
+    }
+}

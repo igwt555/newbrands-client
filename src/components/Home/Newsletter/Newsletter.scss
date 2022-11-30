@@ -1,0 +1,224 @@
+.containerMaker {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+    .card {
+        width: 70%;
+        margin: auto;
+        border-radius: 10px;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        background: #00798C;
+        color: #FFF;
+        padding: 40px 85px;
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+
+            .textContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                flex: 1;
+
+                h2 {
+                    font-size: 31px;
+                    font-family: "Gelion Medium";
+                    margin: 0;
+                    font-weight: 400;
+                    letter-spacing: -0.5px;
+                    line-height: 30px;
+                }
+
+                p {
+                    font-family: "Gelion SemiBold";
+                    margin: 0;
+                    color: #FFFFFFB2;
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                }
+
+                p:last-child {
+                    color: rgba(255, 255, 255, 0.5);
+                }
+            }
+
+            .inputContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                flex: 1;
+                
+                .customSearch {
+                    position: relative;
+
+                    .customSearchInput {
+                        width: 100%;
+                        border-radius: 50px;
+                        padding: 20px 100px 20px 20px;
+                        line-height: 1;
+                        box-sizing: border-box;
+                        outline: none;
+                        border: none;
+                        font-family: "Gelion Medium";
+                        font-size: 14px;
+                        
+                        &::placeholder {
+                            color: #8C87A6;
+                        }
+                    }
+
+                    .btn {
+                        position: absolute;
+                        right: 4px;
+                        top: 4px;
+                        border: 0;
+                        color: #fff;
+                        outline: none;
+                        margin: 0;
+                        border-radius: 100px;
+                        z-index: 2;
+                        padding: 25px 30px;
+                        font-size: 14px;
+                    }
+                }
+
+                .footNote {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-left: 20px;
+
+                    p {
+                        margin: 0;
+                        font-size: 14px;
+                    }
+
+                    .customRadio {
+                        width: 30px;
+                        height: 30px;
+                        position: relative;
+
+                        &:before {
+                            animation: radioFlashing 1.5s 1.5s ease-out;
+                            border: 3px solid #e5f2f3;
+                        }
+
+                        &:after {
+                            animation: radioFlashing 1.5s 1s ease-in;
+                            border: 3px solid #c2edf0;
+                        }
+
+                        &:after, &:before {
+                            content: "";
+                            width: 60%;
+                            height: 60%;
+                            display: block;
+                            border-radius: 50%;
+                            background: #00798c;
+                            opacity: 0;
+                            animation-iteration-count: infinite;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            margin: auto;
+                        }
+                    }
+
+                    @keyframes radioFlashing{
+                        0%{-webkit-transform:scale(.1,.1);opacity:0}
+                        50%{opacity:1}
+                        100%{-webkit-transform:scale(1.2,1.2);opacity:0}
+                    }  
+                }
+            }
+        }
+  
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .containerMaker {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+        margin: auto;
+
+        .customSearch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            .customSearchInput {
+                padding: 20px !important;
+            }
+
+            .btn {
+                position: unset !important;
+                color: #00798C !important;
+                background-color: #e5f2f3;
+            }
+        }
+
+        .card {
+            height: unset !important;
+            width: 100%;
+            margin: unset !important;
+            padding: 50px 30px;
+
+            .row {
+                flex-direction: column !important;
+    
+                .textContainer {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+    
+                    /*> * {
+                        width: max-content;
+                    }*/
+
+                    h2 {
+                        text-align: center;
+                    }
+                }
+    
+                .inputContainer {
+                    margin-top: 20px;
+                    width: 80%;
+    
+                    .footNote {
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .containerMaker {
+        .textContainer {
+            h2 {
+                font-size: 25px !important;
+                text-align: center;
+            }
+        }
+
+        .inputContainer {
+            width: 100% !important;
+        }
+    }
+}

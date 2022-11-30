@@ -1,0 +1,24 @@
+.uploadContainer {
+    .uploadFileBox {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 30px;
+        padding: 20px;
+        border: 5px dashed transparent;
+        border-radius: 10px;
+        transition: 0.8s;
+        cursor: pointer;
+
+        input {
+            top: -40%;
+            left: 0;
+            height: 140%;
+            width: 100%;
+            position: absolute;
+        }
+
+        &.dragging {
+            border: 5px dashed #00798c6b;
+        }
+    }
+}

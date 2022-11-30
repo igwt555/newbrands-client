@@ -1,0 +1,83 @@
+.aboutUsIntro {
+    display: flex;
+    gap: 70px;
+    margin: 0 13vw;
+    align-items: center;
+    margin-top: 50px;
+
+    > * {
+        flex: 1;
+    }
+
+    h1 {
+        font-family: "Gelion SemiBold";
+        font-size: 56px;
+        letter-spacing: -0.04em;
+        margin: 0;
+        line-height: 72px;
+    }
+
+    .clothingRebootText {
+        font-size: 16px;
+        font-weight: bold;
+        color: #00798c;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-family: Gelion;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.03em;
+        color: #5B5675;
+    }
+
+    img {
+        margin-top: 20px;
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .aboutUsIntro {
+        margin: 0 8vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .aboutUsIntro {
+        flex-direction: column;
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            line-height: 53px;
+        }
+
+        p {
+            width: unset !important;
+            text-align: center;
+        }
+
+        img {
+            margin: auto;
+            display: block;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aboutUsIntro {
+        gap: 35px;
+
+        h1 {
+            font-size: 35px;
+            line-height: 43px;
+        }
+    }
+}

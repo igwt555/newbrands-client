@@ -1,0 +1,44 @@
+.companysSuggestionsList {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    top: 70%;
+    max-height: 20rem;
+    overflow-y: auto;
+    box-shadow: 0 5px 10px -5px #333;
+    border: 1px solid #333;
+
+    &.error {
+        border-color: red !important;
+    }
+
+    li {
+        transition: 0.2s;
+        width: 100%;
+        cursor: pointer;
+        border: 1px solid rgb(221, 221, 221);
+        border-left: 0;
+        border-right: 0;
+        border-collapse: collapse;
+        background: white;
+        list-style: none;
+        padding: 0px 10px 10px;
+
+        &:hover {
+            transition: 0.2s;
+            cursor: pointer;
+            color: #FFF;
+            background: #00798c;
+        }
+    }
+
+    &::-webkit-scrollbar {
+        //display: none;
+    }
+}
+
+input {
+    &.error {
+        border-color: red !important;
+    }
+}

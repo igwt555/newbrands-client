@@ -1,0 +1,229 @@
+.marketplace-card {
+    width: 100%;
+    height: 217px;
+
+    border: 1px solid #D2D6DB;
+    padding: 1rem;
+
+    background: #FFFFFF;
+    border: 1px solid #D2D6DB;
+    /* Card */
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    display: flex;
+    position: relative;
+
+    &>.contents {
+        display: grid;
+        gap: 12px;
+        padding-left: 30px;
+
+        .subtitle {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500 !important;
+            font-size: 16px;
+            line-height: 18.72px;
+
+            align-items: center;
+
+            color: #000000;
+
+        }
+
+        .mini-box {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            /* or 171% */
+
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.006em;
+
+            color: #252C32;
+        }
+
+        &>.row {
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            gap: 20px;
+            align-items: center;
+            font-size: 13px;
+            line-height: 14.7px;
+
+            &>.icon {
+                display: flex;
+                width: 14px;
+                font-size: 14px;
+            }
+        }
+
+        &>.row-stock {
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            gap: 20px;
+            align-items: center;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 14.7px;
+
+            &>.icon {
+                display: flex;
+                width: 14px;
+                font-size: 14px;
+            }
+        }
+
+        &>.row-scope {
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            gap: 20px;
+            align-items: center;
+            font-size: 13px;
+            color: #00798C;
+            font-weight: 600;
+            line-height: 14.7px;
+
+            &>.icon {
+                display: flex;
+                color: black;
+                width: 14px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    &>.action {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+}
+
+.image {
+    width: 188px;
+    height: 188px;
+
+    img {
+        width: 188px;
+        height: 188px;
+    }
+
+    left: calc(50% - 188px/2 - 163px);
+    top: calc(50% - 188px/2 + 0.5px);
+
+    border-radius: 2px;
+}
+
+
+
+
+
+.pro-size {
+    img {
+        width: 13px;
+        height: 14px;
+        margin-right: 20px;
+    }
+
+    height: 17.36px;
+    margin-top : 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 109%;
+    /* or 14px */
+
+    color: #000000;
+
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.pro-scan {
+    img {
+        width: 13px;
+        height: 14px;
+        margin-right: 20px;
+    }
+
+    height: 17.36px;
+    margin-top : 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 109%;
+    /* or 14px */
+
+    color: #000000;
+
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.pro-location {
+    img {
+        width: 13px;
+        height: 14px;
+        margin-right: 20px;
+    }
+
+    height: 17.36px;
+    margin-top : 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 109%;
+    /* or 14px */
+
+    color: #000000;
+
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.pro-activity {
+    img {
+        width: 13px;
+        height: 14px;
+        margin-right: 20px;
+    }
+
+    height: 17.36px;
+    margin-top : 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 109%;
+    /* or 14px */
+
+    color: #000000;
+
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.pro-scope {
+    img {
+        width: 13px;
+        height: 14px;
+        margin-right: 20px;
+    }
+
+    height: 17.36px;
+    margin-top : 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 109%;
+    /* or 14px */
+
+    color: #000000;
+
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}

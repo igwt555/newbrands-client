@@ -1,0 +1,104 @@
+.containerProductList {
+    min-height: 50vh;
+    width: 85%;
+    margin: auto;
+
+    p {
+        padding-bottom: 3rem;
+        max-width: 55%;
+        text-align: justify;
+    }
+
+
+    .productTable {
+        border-collapse: separate; 
+        border-spacing:0 15px;
+        max-width: 55vw;
+    }
+    
+    .tableContainer th, .product td {
+        text-align: left;
+        border-radius: 10px;
+    }
+    
+    .tableContainer th:first-child, .product td:first-child{
+        text-align: center;
+    }
+    
+    .product {
+        transition: 0.3s;
+        border-radius: 10px;
+        vertical-align: baseline;
+        box-shadow: 0 0 2px 0 #DEDEDE;
+        background: #FFF;
+        color: #333;
+        .productName, .productType {
+            font-size: 1.2rem;
+        }
+        td:first-child {
+            padding: 1rem 1rem;
+        }
+        td:not(:first-child) {
+            font-family: "Gelion";
+            padding: 1rem 0;
+            padding-right: 3.5rem;
+            max-width: 180px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .indexProduct, .productName {
+            font-family: 'Gelion SemiBold'!important;
+        }
+        &:hover {
+            transition: 0.2s;
+            box-shadow: 0 0 5px #00798c5e;
+        }
+        .status {
+            content: " ";
+            font-weight: bold;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: .5rem;
+            height: .5rem;
+            width: .5rem;
+            border-radius: 50%;
+            border-style: inset;
+            border: 5px solid transparent;
+        }
+        .waiting {
+            border: 5px solid #FFCD00;
+        }
+        .finished {
+            background-color: #00798c;
+            background-size: 250%;
+            background-position: center;
+            background-image: url('../../../assets/img/checkmarkround.svg');
+            background-repeat: no-repeat;
+        }
+        .late {
+            border: 5px solid rgba(255, 77, 0, 0.76);
+        }
+        .stopped {
+            position: relative;
+            display: inline-flex;
+            background: #CB0606;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            &::after {
+                line-height: 0;
+                text-align: center;
+                content: "!";
+                font-family: 'Gelion Light';
+                color: #FFF;
+                font-size: .8em;
+                font-weight: bold;
+            }
+        }
+        .current {
+            border: 5px solid rgba(79, 79, 79, 0.8);
+        }
+    }
+}
+

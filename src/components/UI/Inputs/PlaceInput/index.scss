@@ -1,0 +1,16 @@
+.suggestionInput {
+    .suggestionList {
+        border: 1px solid rgb(226, 226, 226);
+        
+        .suggestionListElement {
+            cursor: pointer;
+            transition: 0.5s;
+            font-size: 17px;
+            padding: 10px;
+
+            &:hover {
+                background: rgb(226, 226, 226);
+            }
+        }
+    }
+}

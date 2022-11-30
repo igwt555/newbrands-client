@@ -1,0 +1,10 @@
+/* CSS Type Project View */
+.projectTypeSelection {
+    .card-checkbox-col {
+        &.disabled {
+            > div {
+                opacity: 0.5;
+            }
+        }
+    }
+}

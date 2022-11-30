@@ -1,0 +1,27 @@
+.containerBtnPaiement {
+    position: fixed;
+    right: 10rem;
+    margin-top: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        transition: .2s;
+        background: #00798c;
+        width: 89%;
+        height: 50px;
+        color: #fff;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        width: 200px;
+
+    }
+    span {
+        margin-top: 5px;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,378 @@
+.mainContainer {
+    display: flex;
+    margin-top: 60px;
+    padding: 30px 100px;
+
+    .containerLeft {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        max-width: 70%;
+        gap: 30px;
+
+        .containerDeferredPaymentForm {
+            margin-bottom: 20px;
+
+            .errorMessage {
+                color: red;
+            }
+
+            h1, h2 {
+                font-size: 2rem;
+                padding: 0;
+                margin: 0;
+                color: #5C5C5C;
+                align-self: flex-start;
+                margin-bottom: 10px;
+            }
+
+            .deferredPaymentForm {
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+
+                .deferredPaymentName {
+                    display: flex;
+                    width: 50%;
+                }
+            
+                .containerAddress {
+                    display: flex;
+                    flex-direction: column;
+
+                    .deferredPaymentAddress {
+                        display: flex;
+                    }
+                }
+            }
+        }
+
+        .containerPaymentMethod {
+            margin-bottom: 20px;
+
+            h2 {
+                font-size: 2rem;
+                padding: 0;
+                margin: 0;
+                color: #5C5C5C;
+                align-self: flex-start;
+                margin-bottom: 10px;
+            }
+
+
+            .paymentMethods {
+                margin-top: 20px;
+                display: flex;
+                align-content: center;
+                list-style: none;
+                padding: 0;
+
+                .method {
+                    display: flex;
+                    padding: .5rem;
+                    border: 1px solid #D9D9D9;
+                    font-size: 3rem;
+
+                    a {
+                        display: flex;
+                    }
+
+                    .visa {
+                        color: #172B85;
+                    }
+                    .mastercard {
+                        margin-left: .5rem;
+                        width: 40px;
+                    }
+                }
+            }
+
+            .paymentTypeText {
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+
+            .paymentType {
+                margin-top: 10px;
+            }
+        }
+
+        .containerContractSignature {
+            margin-bottom: 20px;
+
+            h2, h1 {
+                font-size: 2rem;
+                padding: 0;
+                margin: 0;
+                color: #5C5C5C;
+                align-self: flex-start;
+                margin-bottom: 10px;
+            }
+
+            .btn {
+                margin-top: 15px;
+                border-radius: 50px;
+                padding: 25px 40px;
+                font-size: 16px;
+            }
+
+            .signContract {
+                transition: 0.2s;
+                background: #fff;
+                display: block;
+                margin-top: 1rem;
+                padding: 0 1rem;
+                width: auto;
+                height: 50px;
+                color: #00798c;
+                font-size: 1.25rem;
+                font-family: "Gelion SemiBold";
+                border-radius: 4px;
+                border: 1px solid #00798c;
+                cursor: pointer;
+                margin-bottom: 80px;
+                
+                &:hover {
+                    border: 1px solid #00798c;
+                    background: #00798c;
+                    color: #fff;
+                }
+            }
+
+            .disabledSign {
+                opacity: .3;
+                pointer-events: none;
+            }
+        }
+
+        .containerAbo {
+            margin-bottom: 20px;
+
+            h2, h1 {
+                font-size: 2rem;
+                padding: 0;
+                margin: 0;
+                color: #5C5C5C;
+                align-self: flex-start;
+                margin-bottom: 10px;
+            }
+
+            .containerSubInfo {
+                display: flex;
+                justify-content: space-between;
+
+                .containerSwitchReccurency {
+                    display: flex;
+                    justify-content: space-between;
+                    border: 1px solid #e1e6e2;
+                    border-radius: 40px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 12px;
+                    max-height: 30px;
+                    height: 30px;
+
+                    .mensuel {
+                        margin-right: -5px;
+                    }
+
+                    .active {
+                        background-color: #E5F2F4;
+                        color: #01798C;
+                    }
+
+                    div {
+                        padding: 7px 18px;
+                        cursor: pointer;
+                        //border: 1px solid #e1e6e2;
+                        border-radius: 40px;
+                        transition: .3s;
+                        color: #838199;
+                    }
+                    
+                }
+            }
+
+            .containerListPriceCard {
+                display: flex;
+                margin-top: 30px;
+                flex-direction: column;
+
+                .containerList {
+                    display: flex;
+                    min-height: 177px;
+                    gap: 10px;
+
+                    .disabledChoice {
+                        opacity: .1;
+                    }
+
+                    .priceCard {
+                        flex: 1 1 33%;
+                        border: 2px solid #e1e6e2;
+                        padding: 5px 10px;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        transition: .3s;
+                        transition-duration: .3s;
+                        transition-property: border, margin;
+                        opacity: 0.5;
+
+                        h4 {
+                            margin: 10px 0;
+                            color: #01798C;
+                            font-size: 28px;
+
+                            span {
+                                font-size: 18px;
+                                color: #7F7F7F;
+                            }
+                        }
+
+                        span {
+                            color: #4F4F4F;
+                            font-size: 22px;
+                            font-weight: 900;
+                        }
+
+                        p {
+                            color: #7F7F7F;
+                            text-align: justify;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .active {
+                        border-color: #01798C;
+                        border-width: 2px;
+                        opacity: 1;
+                    }
+                }
+
+                .containerInputUser {
+                    display: flex;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+
+    .asideContainer {
+        display: flex;
+        flex: 1;
+        //max-width: 20%;
+        padding-left: 30px;
+        flex-direction: column;
+        align-items: center;
+
+        .btnPayment {
+            transition: .2s;
+            background: #00798c;
+            width: 89%;
+            height: 50px;
+            color: #fff;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                opacity: .7;
+            }
+
+            &.locked {
+                pointer-events: none;
+                outline: none;
+                opacity: .3!important;
+                background: #00798c!important;
+            }
+
+        }
+        .mustSign {
+            text-align: center;
+            color: #333;
+            font-size: 0.8rem;
+            opacity: 0.8;
+            width: 100%;
+            height: 0;
+            bottom: -1rem;
+            margin-top: 15px;
+        }
+
+        .containerSidePricing {
+            position: inherit;
+            max-width: 72%;
+            margin-top: 220px;
+            margin-bottom: 80px;
+        }
+    }
+
+    &.paymentPageDone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+
+        h1, .btn {
+            width: max-content;
+        }
+    }
+}
+
+.inputDiv {
+    position: relative;
+    display: flex;
+    margin: 0.5rem 0;
+    margin-left: 0;
+    flex: 1;
+    
+    label {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: #333333;
+        font-size: 0.8rem;
+        position: absolute;
+        left: 0.75rem;
+        top: 0.75rem;
+        z-index: 2;
+        user-select: none;
+    }
+
+    input {
+        transition: 0.3s;
+        height: 60px;
+        width: 100%;
+        font-family: "Gelion SemiBold";
+        font-size: 1rem;
+        box-sizing: border-box;
+        text-indent: 0.5rem;
+        border: 1px solid #e1e6e2;
+        padding: 1.5rem 7px 0 3px;
+        background: #fff;
+
+        &:focus {
+            transition: 0.3s;
+            border: 1px solid #333333;
+            outline: none;
+        }
+    }
+}
+
+@media screen and (max-width: 514px) {
+    .deferredPaymentName, .deferredPaymentAddress {
+        flex-direction: column;
+    }
+
+    .paymentPageDone {
+        h1 {
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .deferredPaymentName {
+        width: 100% !important;
+    }
+}

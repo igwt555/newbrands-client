@@ -1,0 +1,112 @@
+.header-container {
+    &>.first-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 42px;
+
+        border-bottom: 1px solid #EAECF0;
+
+        &>.header-button-group {
+            display: flex;
+
+            &>.ZapButton {
+                width: 130px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-items: center;
+                margin: 0px auto;
+                padding: 0px 16px;
+                border: 1px solid #D0D5DD;
+
+                box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                border-radius: 8px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgba(0, 121, 140, 0.1);
+                }
+            }
+
+            &>.SmallButton {
+                display: flex;
+                margin: 0px 16px;
+                padding: 12px;
+
+                &>div {
+                    padding: 14px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 6px;
+
+                    &:hover {
+                        background-color: rgba(0, 121, 140, 0.1);
+                    }
+                }
+
+                &>.avatar {
+                    width: 40px;
+                    height: 40px;
+                    background: no-repeat center/cover url('/assets/img/Avatar.png');
+                    border-radius: 200px;
+                }
+            }
+        }
+    }
+
+    &>.second-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 42px;
+        border-bottom: 1px solid #EAECF0;
+
+        &>.material-count {
+            display: grid;
+            align-items: center;
+            font-family: 'Inter' !important;
+            font-style: normal;
+            font-weight: 600 !important;
+            font-size: 16px;
+            line-height: 24px;
+            color: #344054;
+
+            margin: 12px 0;
+            padding: 0px 16px;
+
+        }
+
+        &>.product-button {
+            margin: 12px 20px;
+            box-sizing: border-box;
+
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(0, 121, 140, 0.1);
+            }
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 24px;
+            color: #00798C;
+            border: 1.5px solid #00798C;
+            border-radius: 24px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+
+            &>.product-left {
+                margin-left: 15px;
+            }
+        }
+    }
+}

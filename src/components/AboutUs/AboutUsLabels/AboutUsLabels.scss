@@ -1,0 +1,26 @@
+.labelsLinkedToOurBlockchainSection {
+    width: 75vw;
+    margin: auto;
+    margin-top: 140px;
+
+    h1 {
+        text-align: center;     
+        font-family: "Gelion Medium";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -0.04em;
+        color: #0A071B;
+    }
+
+    .labelsList {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        padding: 0;
+        list-style: none;
+    }
+}

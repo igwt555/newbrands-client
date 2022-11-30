@@ -1,0 +1,72 @@
+{
+  "name": "front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@reach/accordion": "^0.13.0",
+    "@testing-library/react": "*",
+    "antd": "^4.14.1",
+    "aos": "^2.3.4",
+    "axios": "^0.21.1",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-testing-library": "^3.10.1",
+    "event-source-polyfill": "^1.0.25",
+    "i18next": "*",
+    "jsonfile": "^6.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "npm": "^7.9.0",
+    "react": "^17.0.1",
+    "react-animated-burgers": "^1.2.8",
+    "react-async-script-loader": "^0.3.0",
+    "react-dom": "^16.14.0",
+    "react-file-dropzone": "^0.4.1",
+    "react-google-places-autocomplete": "^3.3.2",
+    "react-i18next": "*",
+    "react-icons": "*",
+    "react-load-script": "^0.0.6",
+    "react-phone-input-2": "^2.14.0",
+    "react-place-autocomplete": "^0.0.2",
+    "react-places-autocomplete": "^7.3.0",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "*",
+    "react-spinners": "^0.11.0",
+    "sass": "^1.38.0",
+    "styled-components": "^5.2.1",
+    "typescript": "^4.1.3",
+    "y18n": "^5.0.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

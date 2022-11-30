@@ -1,0 +1,92 @@
+.material-card-price {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 103px 3fr 1fr;
+    padding: 20px 0;
+
+    border-bottom: 1px solid #DDDDDD;
+
+    &>.Mimage {
+        width: 103px;
+        height: 116px;
+
+        &>img {
+            width: 103px;
+            height: 116px;
+        }
+    }
+
+    &>.M-Content {
+        margin-left: 40px;
+
+
+        &>.Top-row {
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            gap: 2px;
+            margin-top: 23px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 130%;
+            white-space: nowrap;
+
+            &>.normalText {
+                color: #000000;
+            }
+
+            &>.greenText {
+                color: #00798C;
+            }
+        }
+
+        &>.Bottom-row {
+            margin-top: 15px;
+            display: grid;
+            grid-template-columns: min-content min-content min-content;
+            gap: 20px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            /* or 171% */
+
+            display: flex;
+            align-items: flex-end;
+            letter-spacing: -0.006em;
+
+            /* Mid Gray / Mid Gray 2 */
+
+            color: #6E7C87;
+
+            &>div {
+                white-space: nowrap;
+            }
+        }
+    }
+
+    &>.M-price {
+        display: grid;
+        align-items: center;
+
+        white-space: nowrap;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 48px;
+        /* or 200% */
+
+        display: flex;
+        align-items: center;
+        text-align: right;
+        letter-spacing: -0.022em;
+
+        /* Dark Gray / Dark Gray 2 */
+
+        color: #252C32;
+    }
+}

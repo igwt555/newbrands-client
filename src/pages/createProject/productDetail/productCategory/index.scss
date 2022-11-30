@@ -1,0 +1,13 @@
+.categoriesListContainer {
+    .errorMessage {
+        margin-top: 10px;
+        text-align: center;
+        margin-bottom: 0;
+        font-size: 16px;
+        color: red;
+    }
+
+    > div {
+        padding-top: 1rem !important;
+    }
+}

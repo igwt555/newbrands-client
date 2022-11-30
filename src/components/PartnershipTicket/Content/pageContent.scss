@@ -1,0 +1,89 @@
+.partnershipTicketContentContainer {
+    margin-top: 70px;
+    padding: 80px;
+
+    .partnershipTicketIntro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 50%;
+        min-width: 700px;
+        margin: auto;
+
+        .coverImage {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .partnershipTicketIntroContent {
+            width: 100%;
+
+            .categoriesContainer {
+                display: flex;
+                margin-right: auto;
+                align-items: center;
+                gap: 20px;
+
+                p {
+                    color: #00798C;
+                    font-weight: bold;
+                }
+
+                :first-child {
+                    background-color: #e5f2f3;
+                    padding: 5px 20px;
+                    border-radius: 24px;
+                }
+            }
+
+            p {
+                color: #5B5675;
+            }
+
+            .commentBox {
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                gap: 40px;
+
+                .commentInfo {
+                    p {
+                        font-family: "Gelion Medium";
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                    }
+
+                    .commentAuthor {
+                        color: black;
+                    }
+
+                    .commentDate {
+                        color: darkgray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .partnershipTicketContentContainer {
+        padding-left: 10px;
+        padding-right: 10px;
+        .partnershipTicketIntro {
+
+            h1 {
+                font-size: 26px;
+            }
+
+            min-width: unset !important;
+            max-width: unset !important;
+            width: 90%;
+
+            .coverImage {
+                max-width: 100%;
+            }
+        }
+    }
+}

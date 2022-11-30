@@ -1,0 +1,51 @@
+.sideNavMenu {
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    li::first-letter, p::first-letter {
+        text-transform: capitalize;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .subSideNavMenu, .subSideNavMenuItem {
+        padding: 0;
+    }
+
+    .subSideNavMenuItemChildren {
+        padding-left: 20px;
+        margin-top: 10px;
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+
+        &.show {
+            display: flex;
+        }
+    }
+
+    .subSideNavMenuItemName {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .current {
+        font-family: "Gelion SemiBold";
+        width: max-content;
+        padding: 3px 15px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 100%;
+        color: #00798c;
+        background-color: #e5f2f3;
+    }
+}

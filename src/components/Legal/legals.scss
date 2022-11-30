@@ -1,0 +1,130 @@
+.containerLegals {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 5rem;
+    width: 85%;
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        margin-top: 3rem;
+        color: #333333;
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+
+        span {
+            color: #00798C;
+        }
+    }
+
+    .sideMenu {
+        max-width: 15vw;
+        position: fixed;
+        margin-right: 5rem;
+        
+        h2 {
+            font-size: 1.6rem;
+            margin-top: 0;
+        }
+    
+        ul{
+            padding: 0;
+            margin: 50px 0;
+        }
+    
+        .active, li:hover{
+            transition: 0.2s;
+            color: #000;
+            border-left: 3px solid #00798C;
+            font-weight: bolder;
+            padding-left: 1.5rem;
+            cursor: pointer;
+        }
+    
+        ul li{
+            transition: 0.2s;
+            border-left: 3px solid transparent;
+            padding: 10px 0;
+            margin: 10px 0;
+            font-size: 0.85rem;
+            color: grey;
+            list-style: none;
+        }
+    
+        .footer {
+            font-size: 0.7rem;
+            position: fixed;
+            bottom: 1rem;
+            padding: 0;
+            max-width: 15vw;
+            color: #333;
+            font-family: "Gelion Light";
+        }
+    }
+
+    .content {
+        max-width: 60vw;
+        margin-bottom: 4rem;
+        margin-left: auto;
+        button {
+            border: none;
+            outline: none;
+            background: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.dottedHr {
+    border-top: 1px dashed #D1D1D1;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.lastUpdate {
+    color:#33333380;
+    font-size: 1rem;
+    button {
+        font-size: 1rem;
+        color: #00798C;
+    }
+}
+
+.a{
+    margin-left: 0.5rem;
+    color: #00798C;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+}
+
+
+
+@media screen and (max-width: 420px) {
+    .container {
+        flex-direction: column-reverse;
+        h3 {
+            margin-top: 1rem;
+        }
+    }
+    .sideMenu {
+        max-width: 95%;
+        margin: 2rem auto;
+    }
+    .content {
+        max-width: 95%;
+        margin: auto;
+    }
+}

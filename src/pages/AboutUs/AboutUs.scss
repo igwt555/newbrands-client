@@ -1,0 +1,10 @@
+.aboutUsContainer {
+    margin-top: 60px;
+    padding: 60px 0px;
+}
+
+@media screen and (max-width: 500px) {
+    .aboutUsContainer {
+        padding: 60px 0px;
+    }
+}

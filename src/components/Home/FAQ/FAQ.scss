@@ -1,0 +1,135 @@
+.faqContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .faqBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 40px;
+        width: 82%;
+
+        > * {
+            max-width: 70%;
+        }
+
+        .containerName {
+            color: #00798c;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .faqContent {
+
+            .faqDescription, .catchPhraseText {
+                text-align: center;
+                margin-top: 15px;
+                font-size: 40px;
+                line-height: 48px;
+                letter-spacing: -1px;
+            }
+
+            .faqItems {
+                display: flex;
+                gap: 80px;
+
+                div { flex: 1 }
+
+                div:last-child {
+                    margin-top: 40px;
+
+                    ul { padding: 0 }
+                }
+
+                a {
+                    color: #00798c;
+                }
+
+                h2 {
+                    font-size: 32px;
+                    line-height: 40px;
+                    letter-spacing: -1px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: -1px;
+                    color: #333;
+                }
+            }
+        }
+    }
+
+    .moreQuestions {
+        text-align: center;
+        border: 1px solid lightgray;
+        padding: 15px 7%;
+        margin-top: 60px;
+
+        p {
+            font-size: 18px;
+            line-height: 32px;
+            margin: 0;
+            letter-spacing: -0.5px;
+
+            span {
+                color: #00798c;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .faqContainer {
+        .faqBox {
+            width: 100%;
+            padding: 80px 5vw;
+
+            > * {
+                max-width: unset;
+            }
+
+            .faqContent {
+                .catchPhraseText {
+                    font-size: 30px;
+                    line-height: 38px;
+                }
+
+                .faqItems {
+                    flex-direction: column;
+                    gap: 0 !important;
+                    text-align: center;
+        
+                    div:last-child {
+                        margin-top: 0 !important;
+                    }
+
+                    h2 {
+                        font-size: 25px;
+                        line-height: 33px;
+                        margin-top: 45px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .faqContainer {
+        .moreQuestions {
+            padding: 15px 20px;
+
+            p {
+                font-size: 17px;
+                line-height: 30px;
+            }
+        }
+    }
+}

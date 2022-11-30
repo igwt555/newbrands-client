@@ -1,0 +1,236 @@
+.marketcart1-page {
+    width: 1360px;
+    margin: 0 auto;
+    position: relative;
+
+    &>.main-content {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        gap: 48px;
+        margin-top: 44px;
+
+        &>.marketcart1-content {
+            width: 904px;
+
+            &>.title {
+                margin-left: 50px;
+                margin-bottom: 4px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 38px;
+                color: #101828;
+            }
+
+            &>.comment {
+                margin-left: 50px;
+                margin-bottom: 20px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                /* identical to box height, or 150% */
+
+
+                /* Gray/600 */
+
+                color: #475467;
+            }
+
+            &>.MaterialCardGroup {
+                margin-left: 50px;
+            }
+
+        }
+
+        &>.summary {
+            margin-right: 45px;
+
+            &>.first-div {
+                border: 1px solid #E1E2E6;
+                border-radius: 5px;
+                padding: 20px 26px;
+                margin-bottom: 24px;
+
+                &>.sub-title {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 22px;
+                    color: #0A071B;
+
+                    padding-bottom: 28px;
+                }
+
+                &>.big-div1 {
+                    display: grid;
+                    grid-template-columns: min-content 1fr;
+
+                    &>.small-div1 {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 17px;
+                        line-height: 20px;
+                        /* identical to box height, or 118% */
+
+
+                        /* Primary Black (texte <P>) */
+
+                        color: #0A071B;
+                        white-space: nowrap;
+                    }
+
+                    &>.small-div2 {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 20px !important;
+                        /* identical to box height, or 133% */
+
+                        text-align: right;
+
+                        /* Primary Black (texte <P>) */
+
+                        color: #0A071B;
+                        text-align: right;
+                    }
+                }
+
+                &>.big-div2 {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #00798C;
+                    padding-bottom: 23px;
+                    border-bottom: 1.5px solid #E1E2E6;
+
+                    &>span {
+                        color: #0A071B;
+                    }
+                }
+
+                &>.big-div3 {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    padding-top: 24px;
+                    padding-bottom: 8px;
+
+                    &>.small-div1 {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 17px;
+                        line-height: 20px;
+                        /* identical to box height, or 118% */
+
+
+                        /* Primary Black (texte <P>) */
+
+                        color: #0A071B;
+                        white-space: nowrap;
+                    }
+
+                    &>.small-div2 {
+                        white-space: nowrap;
+                        text-align: right;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 20px;
+                        /* or 133% */
+
+                        text-align: right;
+
+                        /* Primary Black (texte <P>) */
+
+                        color: #0A071B;
+
+                    }
+                }
+
+                &>.big-div4 {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+
+                    &>.small-div1 {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 20px;
+                        /* identical to box height, or 100% */
+
+
+                        /* Primary Black (texte <P>) */
+
+                        color: #0A071B;
+
+                        white-space: nowrap;
+                    }
+
+                    &>.small-div2 {
+                        white-space: nowrap;
+                        text-align: right;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        /* or 125% */
+
+                        text-align: right;
+
+                        /* Primary Black (texte <P>) */
+
+                        color: #0A071B;
+                    }
+                }
+            }
+
+            &>.button-div {
+                text-align: center;
+                padding-top: 12px;
+                padding-bottom: 12px;
+
+                margin-bottom: 17px;
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+                /* identical to box height, or 171% */
+
+
+                /* Black/Black__70 */
+
+                color: #4D4D4D;
+
+                border: 1px solid #DEDEDE;
+                box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 4px #00798C;
+                border-radius: 8px;
+            }
+
+            &>.last-comment {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+
+                /* Primary Black (texte <P>) */
+
+                color: #0A071B;
+
+                opacity: 0.7;
+            }
+        }
+    }
+}

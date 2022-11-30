@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: #fefdfd;
+    height: 4rem;
+
+    .headerBanner {
+        height: 40px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .container {
+        height: 4rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: auto 100px;
+    }
+
+    .bigMenu {
+        width: 100%;
+        margin-left: 0;
+        .profileMenuContainer{
+            margin-left: auto;
+        }
+    }
+
+    .burgerMenu {
+        display: none;
+        button {
+            padding: none;
+            padding-right: 20px;
+            outline: none;
+            user-select: none;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .menuElement {
+        float: left;
+        margin: 20px;
+        position: relative;
+
+        > a {
+            color: black;
+        }
+
+        > a::after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: -5px;
+            content: "";
+            display: block;
+            height: 1px;
+            left: 50%;
+            position: absolute;
+            background: black;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+            position: absolute;
+            left:50%;
+            transform:translate(-50%,-50%);
+            text-align:center;
+        }
+
+        > a:hover::after,
+        > a.active::after {
+            width: 80%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+    }
+    
+    .unloggedMenu {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        gap: 30px;
+
+        a {
+            font-size: .85rem;
+            font-family: 'Gelion Medium';
+            color: #00798c;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.5;
+                transition: 0.2s;
+            }
+        }
+    }
+
+    .btnLink {
+        .btn {
+            box-sizing: border-box;
+        }
+    }
+    
+    .link {
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+    }
+    
+    /*.menuElement:hover::after,
+    .active::after {
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        font-weight: 500;
+        width: 50%;
+        position: relative;
+        background: #212529;
+    }*/
+    
+    .dropDown {
+        transition: 0.15s;
+        color: #333333;
+        margin-left: .25rem;
+    }
+    
+    .profileMenuContainer:focus {
+        outline: none;
+        .profileDiv {
+            outline: none;
+            transition: 0.15s;
+            cursor: pointer;
+            background: #333333;
+            color: #fff;
+            .dropDown {
+                transition: 0.15s;
+                color: #fff;
+            }
+        }
+    }
+    
+    .profileDiv {
+        transition: 0.15s;
+        min-width: 165px;
+        min-height: 40px;
+        display: flex;
+        border: 1px solid #333333;
+        padding: 0 5px;
+        align-items: center;
+        justify-content: space-evenly;
+        .profilePicture {
+            margin-right: .25rem;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+        }
+        &:hover {
+            outline: none;
+            transition: 0.15s;
+            cursor: pointer;
+            background: #333333;
+            color: #fff;
+            .dropDown {
+                transition: 0.15s;
+                color: #fff;
+            }
+        }
+    }
+    
+    .pMenuContainer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+    }
+    
+    .profileMenu {
+        width: 100%;
+        padding: 0 5px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        box-sizing: border-box;
+        border: 1px solid #333333;
+        border-top: 0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        li {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            width: 100%;
+            position: relative;
+
+            a {
+                display: flex;
+                width: 100%;
+                padding: 1rem 0;
+
+                img {
+                    flex: 1;
+                    height: 20px;
+                }
+
+                span {
+                    flex: 2;
+                }
+            }
+
+            &:hover {
+                cursor: pointer;
+                background: #e6f2f4;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .header {
+        .container {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+    .profileMenuContainer{
+        display: none;
+    }
+    .container {
+        display: flex;
+    }
+    .burgerMenu {
+        display: flex !important;
+        width: auto !important;
+        margin-left: auto !important;
+        margin-right: 0 !important;
+
+        button {
+            padding: 0 !important;
+        }
+    }
+    header ul {
+        position: absolute;
+        height: 0;
+        overflow: hidden;
+        transition: 0.2s;
+        width: 100vw;
+        left: 0;
+        top: 1rem;
+        background: #fff;
+        z-index: -1;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 3rem;
+    }
+    .blueBtn {
+        margin-left: 0;
+    }
+    .openMobile {
+        height: auto;
+        opacity: 1;
+        visibility: visible;
+    }
+    .unloggedMenu {
+        margin: auto;
+        flex-direction: column;
+        // height: 7rem;
+        justify-content: space-around;
+    }
+}

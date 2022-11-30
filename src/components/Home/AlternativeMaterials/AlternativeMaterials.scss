@@ -1,0 +1,154 @@
+.alternativeMaterialsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 90px 9vw 0;
+
+    > div {
+        .blueText {
+            font-size: 14px;
+            font-weight: bold;
+            color: #00798c;
+        }
+
+        h1 {
+            color: #212529;
+            font-weight: bold;
+            font-family: 'Gelion Bold';
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -1px;
+            margin-top: 10px;
+
+            strong {
+                color: #00798c;
+                font-family: 'Gelion Bold';
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            color: #5c5c5c;
+            line-height: 32px;
+        }
+
+        .btn {
+            font-weight: 500;
+            transition: 0.2s;
+            outline: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            padding: 24px 40px;
+            height: 52px;
+            box-shadow: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-family: 'Gelion Medium';
+            &:hover {
+                transition: 0.2s;
+                cursor: pointer;
+                opacity: 0.5;
+            }
+        }
+
+        .commentBox {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+
+            img {
+                width: 200px;
+                height: auto;
+            }
+
+            .comment {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+
+                p {
+                    margin: 0;
+                    color: black;
+                }
+
+                .commentAuthor {
+
+                    font-size: 16px;
+                    font-family: "Gelion SemiBold";
+
+                    span {
+                        color: #777676;
+                        font-family: "Gelion SemiBold";
+                    }
+                }
+            }
+        }
+    }
+
+    .groupedCommandImage {
+        width: 100%;
+        max-width: 600px;
+        min-width: 400px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .alternativeMaterialsContainer {
+        flex-direction: column;
+        margin: 90px 5vw 0;
+
+        .groupedCommandImage {
+            min-width: unset;
+            width: 60%;
+        }
+
+        > div {
+            text-align: center;
+
+            h1 {
+                font-size: 30px;
+                line-height: 38px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .alternativeMaterialsContainer {
+        .groupedCommandImage {
+            width: 75%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .alternativeMaterialsContainer {
+        .groupedCommandImage {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .alternativeMaterialsContainer {
+        .commentBox {
+
+            img {
+                width: 100px !important;
+                height: auto;
+            }
+
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,183 @@
+.userInfoInputContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 15px;
+    row-gap: 15px;
+
+    > div {
+        position: relative;
+
+        label {
+            span {
+                font-family: "Gelion";
+                font-size: 18px;
+            }
+        }
+
+        .selectInput {
+            height: 100%;
+            width: 100%;
+            font-size: 18px;
+            background: transparent;
+            border-radius: 4px;
+            border: 1px solid lightgray;
+            padding: 10px;
+
+            >:first-child {
+                font-family: "Gelion";   
+            }
+
+            optgroup {
+                option {
+                    font-size: 10px;
+                    font-family: "Gelion Medium";
+                }
+            }
+        }
+
+        .react-tel-input {
+            height: 100%;
+
+            .form-control {
+                width: 100%;
+                height: 100%;
+                padding-left: 75px;
+                border-color: lightgray;
+                font-family: "Gelion Medium";
+            }
+
+            .flag-dropdown {
+                width: 65px;
+                border-color: lightgray;
+
+                .selected-flag {
+                    padding: 0 0 0 20px;
+                    width: 100%;
+                }
+            }
+        }
+
+        &.error {
+            fieldset, select, .react-tel-input .form-control, .react-tel-input .flag-dropdown {
+                border-color: red !important;
+                outline: none;
+            }
+        }
+    }
+
+    .autoCompleteContainer {
+        z-index: 5;
+        position: absolute;
+        width: 100%;
+        max-height: 20rem;
+        overflow-y: auto;
+        box-shadow: 0 5px 10px -5px #333;
+        border: 1px solid #333;
+        
+        .loading {
+            fill: #00798c;
+            align-self: center;
+            margin: 10px;
+            -webkit-animation: spin 2s linear infinite;
+            -moz-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        ul {
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            font-size: 0.95rem;
+            height: auto;
+            width: 100%;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h4,
+            span {
+                margin: 0;
+                padding: 0;
+                line-height: 1.2;
+            }
+            .flexDiv {
+                display: flex;
+                align-items: center;
+            }
+            div {
+                width: 100%;
+                span:not(:first-child) {
+                    margin: 0 0.5rem;
+                }
+            }
+            li {
+                transition: 0.2s;
+                width: 100%;
+                padding: 1rem;
+                margin: 0.2rem auto;
+                &:hover {
+                    transition: 0.2s;
+                    cursor: pointer;
+                    color: #fff;
+                    background: #00798c;
+                }
+            }
+        }
+    }
+
+    .inputDiv {
+        position: relative;
+        margin: 0;
+        flex: 100%;
+        display: flex;
+        -webkit-appearance: none;
+        height: unset;
+
+        label {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            color: #333333;
+            font-size: 0.8rem;
+            position: absolute;
+            left: 1.25rem;
+            top: 1.25rem;
+            z-index: 2;
+            margin: -10px;
+        }
+
+        input {
+            transition: 0.3s;
+            font-family: "Gelion SemiBold";
+            font-size: 1rem;
+            box-sizing: border-box;
+            text-indent: 0;
+            border: 1px solid #e1e6e2;
+            padding: 18.5px 14px;
+            width: 100%;
+            max-height: 60px;
+            background: #fff;
+            border-radius: 4px;
+
+            &:focus {
+                transition: 0.3s;
+                border: 1px solid #333333;
+                outline: none;
+            }
+        }
+
+        .companysSuggestionsList {
+            top: 97%;
+            font-size: 16px !important;
+        }
+    }
+}
+
+.userInfoErrorMessage {
+    margin-top: 20px !important;
+    text-align: center;
+    font-size: 16px;
+    color: red;
+}

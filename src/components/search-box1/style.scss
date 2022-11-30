@@ -1,0 +1,28 @@
+.search-box1 {
+    padding: 15px 24px;
+    border: 0px solid #00798C;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    width: fit-content;
+    align-items: center;
+
+    &>input {
+        margin-left: 16px;
+        border: none;
+        font-size: 20px;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            color: #333333;
+            opacity: 0.5;
+        }
+    }
+
+    &>.icon {
+        color: #B0BABF;
+        font-size: 24px;
+    }
+}

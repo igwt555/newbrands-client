@@ -1,0 +1,44 @@
+.default-layout {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    height: 100vh;
+
+    &>.main-content {
+        height: 100%;
+        overflow: scroll;
+    }
+
+    &>nav {
+        border-right: 1px solid #EAECF0;
+        padding: 10px;
+
+        &>ul {
+            display: grid;
+            gap: 2rem;
+            list-style: none;
+            padding: 0;
+
+            &>li {
+                padding: 14px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-items: center;
+                border-radius: 6px;
+
+                &:hover {
+                    background-color: rgba(0, 121, 140, 0.1);
+                }
+
+                &>.logo {
+                    width: 32px;
+                    height: 32px;
+                    background: no-repeat center/cover url('/assets/img/logo.png');
+                }
+            }
+
+
+        }
+    }
+}

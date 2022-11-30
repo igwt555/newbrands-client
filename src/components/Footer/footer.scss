@@ -1,0 +1,111 @@
+
+.footer {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 0 100px;
+
+    .fullVersion {
+        min-height: 3.5rem;
+    }
+
+    ul {
+        list-style: none;
+        margin-left: auto;
+
+        li {
+            float: left;
+            margin: 0 0.9rem;
+
+            a {
+                &:hover {
+                    cursor: pointer;
+                    transition: 0.2s;
+                    opacity: 0.5;
+                }
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .socialNewtorksLinks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 24px;
+            max-height: 24px;
+        }
+    }
+    
+    div {
+        max-width: 50vw;
+        display: flex;
+        flex-direction: column;
+        max-height: 10vh;
+        justify-content: space-between;
+    }
+    
+    a {
+        transition: 0.2s;
+        display: block;
+        font-family: "Gelion Medium";
+        font-weight: 500;
+        font-size: 0.8rem;
+        line-height: 120%;
+        text-decoration: underline;
+    }
+    
+    span {
+        color: #343a40;
+        font-family: "Gelion Light";
+        font-size: 0.8rem;
+        line-height: 120%;
+    }
+
+}
+
+.fixed {
+    z-index: 2;
+    margin-bottom: 0;
+    background: #FDFDFD;
+    //position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+/******************/
+/*** RESPONSIVE ***/
+
+@media screen and (max-width: 420px) {
+    .footer {
+        flex-direction: column-reverse !important;
+        margin-bottom: 5rem;
+    }
+    .footer ul {
+        margin: 20px auto;
+        padding: 0;
+    }
+    .footer div {
+        max-width: 98%;
+        text-align: center;
+        margin: auto;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .footer div a {
+        margin-top: 1rem;
+    }
+    .footer ul li:first-of-type {
+        margin: 0;
+        margin-right: 0.9rem;
+    }
+}

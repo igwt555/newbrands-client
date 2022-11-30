@@ -1,0 +1,162 @@
+.containerCommandConfirmed {
+    height: 85vh;
+    width: 85%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3.5rem;
+
+    .contentDiv {
+        margin: auto;
+        max-width: 80vw;
+        flex-wrap: wrap;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        .dottedDiv {
+            background-image: linear-gradient(to right, black 50%, rgba(255, 255, 255, 0) 0%),
+                linear-gradient(to bottom, black 50%, rgba(255, 255, 255, 0) 0%),
+                linear-gradient(to left, black 50%, rgba(255, 255, 255, 0) 0%),
+                linear-gradient(to bottom, black 50%, rgba(255, 255, 255, 0) 0%);
+            background-size: 1rem 1px, 1px 1rem;
+            background-position: top left, right top, bottom right, left top;
+            background-repeat: repeat-x, repeat-y;
+            padding: 1rem;
+            border-radius: 4px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .lengthSpan {
+                font-family: "Gelion Light";
+                position: absolute;
+                bottom: -1.75rem;
+            }
+
+            .MainDiv {
+                background: #efefef;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                padding: 3rem 4rem;
+                justify-content: center;
+                align-items: center;
+
+                .mainDivContent {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    color: #000;
+                    text-align: left;
+                    max-width: 300px;
+                    position: relative;
+
+                    h1 {
+                        display: block;
+                        font-size: 2rem;
+                        line-height: 0.8;
+                    }
+
+                    .companyName {
+                        display: inline;
+                        padding: 0;
+                        margin: 0;
+                        font-size: 1.8rem;
+                    }
+
+                    .country {
+                        margin-left: 1rem;
+                        font-size: 1.5rem;
+                        font-family: "Gelion Light";
+                        color: #4f4f4f;
+                    }
+
+                    .inputDiv {
+                        position: relative;
+                        width: 100%;
+                        display: flex;
+                        height: 85px;
+
+                        label {
+                            font-family: Georgia, "Times New Roman", Times, serif;
+                            color: #333333;
+                            font-size: 0.8rem;
+                            position: absolute;
+                            left: 1.25rem;
+                            top: 1.25rem;
+                            z-index: 2;
+                        }
+
+                        input {
+                            transition: 0.3s;
+                            font-family: "Gelion SemiBold";
+                            font-size: 1rem;
+                            box-sizing: border-box;
+                            text-indent: 1rem;
+                            border: 1px solid #e1e6e2;
+                            margin: 10px 0;
+                            padding-top: 1.5rem;
+                            width: 100%;
+                            max-height: 60px;
+                            background: #fff;
+                            &:focus {
+                                transition: 0.3s;
+                                border: 1px solid #333333;
+                                outline: none;
+                            }
+                        }
+                    }
+
+
+                    .filledBtn {
+                        cursor: pointer;
+                        border-radius: 4px;
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: "Gelion SemiBold";
+                        font-size: 1.2rem;
+                        background-color: #00798c;
+                        color: #fff;
+                        outline: none;
+                        border: 1px solid #00798c;
+                        &:hover {
+                            background: transparent;
+                            color: #00798c;
+                        }
+                    }
+                }
+            }
+
+            .imgDiv {
+                margin-left: -3rem;
+                z-index: 2;
+                height: 75%;
+                .img {
+                    object-fit: contain;
+                    width: auto;
+                    height: 100%;
+                }
+            }
+
+        }
+        
+    }
+}
+
+
+@media (min-width: 1281px) {
+    .imgDiv .img {
+        max-width: 400px;
+    }
+}

@@ -1,0 +1,56 @@
+.materialsource-page {
+    width: 1360px;
+    margin: 0 auto;
+    position: relative;
+
+    &>.material-content {
+        &>.title {
+            margin-top: 53px;
+            margin-bottom: 20px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 38px;
+            text-align: center;
+            color: #101828;
+        }
+
+        &>.MaterialCardGroup {
+            margin: 0px 252px 30px 170px;
+        }
+
+    }
+
+    &>.footer {
+        position: absolute;
+        bottom: 0px;
+        left: 10%;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08), 0px 2px 20px rgba(0, 0, 0, 0.04);
+        border-radius: 8px;
+        width: 80%;
+        padding: 13px 16px;
+        display: flex;
+        justify-content: space-between;
+
+        border-top: 3px solid;
+        border-image: linear-gradient(to right, #00798C 50%, transparent 50%) 100% 1;
+
+        &>button {
+            padding: 10px;
+            min-width: 152px;
+            border-radius: 24px;
+            border: none;
+
+            &.outline {
+                background-color: rgba(0, 121, 140, 0.1);
+            }
+
+            &.fill-button {
+                background-color: #00798C;
+                color: white;
+            }
+        }
+    }
+}

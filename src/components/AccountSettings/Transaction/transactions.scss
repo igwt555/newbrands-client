@@ -1,0 +1,134 @@
+.containerTransaction {
+    position: relative;
+    min-height: 80vh;
+    width: 75vw;
+    margin-left: 25vw;
+    box-sizing: border-box;
+    padding: 8rem 2rem 5rem;
+
+    .mainContent {
+        display: flex;
+        flex-direction: column;
+
+        h2, h4 {
+            line-height: 1.5;
+            padding: 0;
+            margin: 0;
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 2rem;;
+        }
+
+        .pendingPayment {
+            span {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 0;
+            .hr {
+                width: 65%;
+                margin-top: auto;
+                margin-bottom: 7px;
+                height: 1px;
+                background-image: linear-gradient(90deg, #B4B5B9 50%, rgba(255,255,255,0) 0);
+                background-size: 1rem 1px;
+                background-repeat: repeat-x;
+                box-sizing: border-box;
+                border-radius: 8px;
+            }
+        }
+
+        .seeBills {
+            font-family: 'Gelion SemiBold';
+            width: 100%;
+            color: #00798C;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-bottom: 1.5rem;
+            svg {
+                margin-left: .5rem;
+            }
+        }
+
+        .cardHistoryContainer {
+            .whiteBtn {
+                transition: 0.2s;
+                background: #FFF;
+                border: 1px solid #00798C;
+                width: 100%;
+                color: #00798C;
+                border-radius: 6px;
+                height: 4rem;
+                font-size: 1rem;
+                font-family: 'Gelion SemiBold';
+                margin-bottom: 1rem;
+                &:hover {
+                    transition: 0.2s;
+                    cursor: pointer;
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        .cardPending, .cardHistory {
+            margin: .8rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            border-radius: 6px;
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+            h4 {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: normal;
+            }
+        }
+        
+        .cardPending {
+            background: rgba(0, 121, 140, 0.1);
+        }
+        
+        .cardHistory{ 
+            border: 1px solid #E1E2E6;
+            background: #FFF;
+        }
+
+    }
+
+}
+
+.price {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.paymentDescr {
+    font-size: 0.8rem;
+}
+
+.date {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    font-family: 'Gelion SemiBold';
+    color: #00798C;
+}
+
+@media screen and (max-width: 1023px) {
+    .containerTransaction {
+        margin: 0;
+        width: 100vw;
+        padding-left: 85px;
+        padding-right: 25px;
+        box-sizing: border-box;
+    }
+}

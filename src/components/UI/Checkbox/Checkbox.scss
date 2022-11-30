@@ -1,0 +1,49 @@
+.customCheckboxContainer {
+    width: max-content;
+
+    input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+    }
+
+    label {
+        position: relative;
+        cursor: pointer;
+        font-family: "Gelion Medium";
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.03em;
+        color: #0A071B;
+
+        &::before {
+            content:'';
+            -webkit-appearance: none;
+            background-color: transparent;
+            border-radius: 50%;
+            background: #e5f2f3;
+            padding: 10px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    }
+
+    input:checked + label:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: 8px;
+        width: 3px;
+        height: 10px;
+        border: solid #00798c;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+}

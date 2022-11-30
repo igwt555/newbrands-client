@@ -1,0 +1,169 @@
+.marketproduct-page {
+    width: 1360px;
+    margin: 0 auto;
+
+    &>.Header-Div {
+        margin: 35px 40px;
+        display: flex;
+        justify-content: space-between;
+
+        &>.Mt-name {
+            display: flex;
+
+            &>.Mt-name1 {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                color: #666666;
+            }
+
+            &>.Mt-name2 {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 117%;
+
+                color: #000000;
+            }
+        }
+
+        &>.Button-Group {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            &>button {
+                padding: 10px;
+                min-width: 152px;
+                border-radius: 24px;
+                border: none;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+
+                &.Btn-Sample {
+                    margin-right: 20px;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 12px 20px;
+                    gap: 8px;
+
+                    color: #00798C;
+
+                    border: 1.5px solid #00798C;
+                    /* Shadow/xs */
+
+                    border-radius: 8px;
+                }
+
+                &.Btn-Commander {
+                    margin-right: 20px;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 12px 20px;
+                    gap: 8px;
+
+                    color: #FFFFFF;
+
+                    background: #00798C;
+                    border-radius: 8px;
+
+                }
+            }
+        }
+    }
+
+    &>.Product-container {
+        margin: 0 43px;
+        display: grid;
+        grid-template-columns: min-content 1fr;
+
+        &>.ImageDiv {
+            margin-right: 81px;
+            width: 466px;
+            height: 466px;
+            border-radius: 2px;
+        }
+
+        &>.CharacterContent {
+            height: fit-content;
+
+            &>.CharacterTable {
+                border: 1px solid #DEDEDE;
+                border-radius: 8px;
+                box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.08), 0px 2px 4px -2px rgba(0, 0, 0, 0.04);
+
+                &>.row-item {
+                    display: grid;
+                    grid-template-columns: 200px 1fr;
+
+                    &>.item-title {
+                        display: grid;
+                        align-items: center;
+                        // justify-items: center;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 24px;
+
+                        margin: 16px 24px;
+
+                    }
+
+                    &>.item-value {
+                        display: grid;
+                        align-items: center;
+                        // justify-items: center;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 24px;
+                        margin: 16px 24px;
+                    }
+                }
+
+
+                .border-bottom_green {
+                    border-bottom: 1px solid #DEDEDE;
+                }
+            }
+
+            &>.SourceContent {
+                font-family: 'Inter';
+                font-style: italic;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                /* identical to box height, or 171% */
+
+                text-align: right;
+
+                color: #666666;
+            }
+
+            &>.JobCardGroup {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+
+                gap: 12px;
+
+                &>div {
+                    display: grid;
+                    border: 1px soild black;
+                }
+            }
+        }
+
+    }
+
+}

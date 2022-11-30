@@ -1,0 +1,176 @@
+.containerPrice {
+    //background: #00798C;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .cardContainer {
+        width: 85%;
+
+        .introduction {
+            text-align: center;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            margin: 2rem 0;
+
+            .firstCard {
+                border-radius: 10px;
+                background: #FFF;
+                color: #333333;
+                padding: 3rem;
+                h6 {
+                    margin: 0;
+                    font-size: 1rem;
+                    font-family: "Gelion Light";
+                }
+                h3 {
+                    font-size: 2.5rem;
+                    margin: 1rem 0;
+                }
+            }
+
+            .card {
+                border-radius: 10px;
+                background: rgba(255,255,255,0.11);
+                color: #FFF;
+                padding: 3rem;
+                h6 {
+                    margin: 0;
+                    font-size: 1rem;
+                    font-family: "Gelion Light";
+                }
+                h3 {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+
+    .h2 {
+        font-size: 2.5rem;
+        color: #FFF;
+        font-family: 'Gelion SemiBold';
+    }
+    
+    .p {
+        color: #FFF;
+        font-size: 1.125rem;
+        font-family: "Gelion Light";
+    }
+
+    .lastRow {
+        height: 5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+        h5 {
+            font-size: 1.25rem;
+        }
+        span {
+            margin-left: 7rem;
+        }
+    }
+    
+    .row {
+        height: 10rem;
+        display: flex;
+        flex-direction: row;
+        padding: 0 2rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    
+    .listColumn {
+        span{
+            margin-left: 1rem;
+            font-family: 'Gelion Light';
+        }
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .btn {
+        width: 20%;
+        font-weight: 500;
+        transition: 0.2s;
+        outline: none;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 24px 32px;
+        height: 52px;
+        color: #fff;
+        border: none;
+        box-shadow: none;
+        background: #00798c;
+        border-radius: 10px;
+        margin-left: 4rem;
+        font-size: 0.8rem;
+        font-family: 'Gelion Medium';
+        &:hover {
+            transition: 0.2s;
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    }
+    
+    .disabledBtn {
+        opacity: 0.5;
+        &:hover {
+            cursor: default;
+            transition: 0.5;
+        }
+    }
+    
+    .firstColumn {
+        max-width: 25%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h3 {
+            margin: 0
+        }
+    }
+    
+    .item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .linkBtn {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 420px) {
+    .container {
+        height: 85rem;
+        overflow: auto;
+    }
+    .firstCard, .card {
+        width: 65rem;
+    }
+    
+    .row {
+        width: 60rem;
+    }
+}
